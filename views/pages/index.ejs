@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body class="container">
+
+
+
+<main>
+  <div class="jumbotron">
+    <h1>This is great</h1>
+    <p>Welcome to templating using EJS</p>
+    
+    <% for(var i=0; i<data.length; i++) { %>
+      <div style="background-color: antiquewhite;">
+      <img style="width: 70px;" src="avtar.png">
+      <div style="margin-top: -90px; margin-left: 110px;">
+        <p><%= data[i]['name'] %> </p>
+        <p><%= data[i]['email'] %> </p>
+        <p><%= data[i]['phone'] %> </p>
+      </div>
+      </div>
+      <br>
+  <% } %>
+  </div>
+</main>
+
+<footer>
+  
+</footer>
+
+</body>
+</html>
